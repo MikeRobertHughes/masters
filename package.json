@@ -38,7 +38,7 @@
     "webpack": "^1.9.11",
     "webpack-dev-server": "^1.9.0",
     "xhr": "^2.0.2",
-    "yeticss": "^6.0.7"
+    "yeticss": "^7.4.0"
   },
   "license": "MIT",
   "private": true,
