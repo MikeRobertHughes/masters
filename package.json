@@ -38,7 +38,8 @@
     "webpack": "^1.9.11",
     "webpack-dev-server": "^1.9.0",
     "xhr": "^2.0.2",
-    "yeticss": "^6.0.7"
+    "yeticss": "^6.0.7",
+    "snyk": "^1.316.1"
   },
   "license": "MIT",
   "private": true,
@@ -46,6 +47,9 @@
     "build": "webpack",
     "deploy": "surge -p public -d labelr.surge.sh",
     "start": "webpack-dev-server",
-    "yolo": "git add --all && git commit -am \"$(date)\" && npm version minor && git push origin master --tags && npm run build && npm run deploy"
-  }
+    "yolo": "git add --all && git commit -am \"$(date)\" && npm version minor && git push origin master --tags && npm run build && npm run deploy",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
